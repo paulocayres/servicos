@@ -1,0 +1,12 @@
+<input type="text" #cursoInput>
+<button (click)="onClick(cursoInput.value)">Grava Curso</button>
+
+
+
+<ul>
+    <li *ngFor="let curso of cursos">
+        {{curso}}
+    </li>
+</ul>
+
+<recebe-curso></recebe-curso>

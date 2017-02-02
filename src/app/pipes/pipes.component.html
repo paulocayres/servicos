@@ -1,0 +1,13 @@
+<br>
+<p>Título: {{livro.titulo | uppercase | camelcase}} </p>
+<p>Estrelas: {{livro.rating | number: '1.1-1'}} </p>
+<p>Páginas: {{livro.numeroPaginas | number}} </p>
+<p>Preço: {{livro.preco | currency:'BRL':'true' }} </p>
+<p>Data de Lançamento: {{livro.dataLancamento | date}} </p>
+<p>URL: {{livro.url}} </p>
+<br>
+<p>Livro: {{livro | json}} </p>
+
+<br>
+<h5>Exemplo de valor assíncrono. </h5>
+<p>{{valorAsync | async}}</p>
